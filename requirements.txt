@@ -1,0 +1,11 @@
+bandit
+black
+docformatter
+flake8
+isort
+mypy
+pre-commit
+pre-commit-hooks
+pydocstyle
+pytest
+pyupgrade
