@@ -29,8 +29,6 @@ repos:
             language: system
         -   id: requirements-txt-fixer
             language: system
-#        -   id: double-quote-string-fixer
-#            language: system
     -   repo: https://github.com/asottile/pyupgrade
         rev: v1.24.0
         hooks:
@@ -43,13 +41,6 @@ repos:
         - id: isort
           verbose: true
           language: system
-# TODO: Does not work on Gitpod
-#    -   repo: https://github.com/psf/black
-#        rev: stable
-#        hooks:
-#        - id: black
-#          verbose: true
-#          language_version: python3.8
     -   repo: https://gitlab.com/pycqa/flake8
         rev: 3.7.9
         hooks:
@@ -78,7 +69,7 @@ repos:
             entry: bash -c 'mypy "$@" || true' --
             language: system
     -   repo: https://github.com/pycqa/pydocstyle
-        rev: 5.1.1  # pick a git hash / tag to point to
+        rev: 5.1.1
         hooks:
         - id: pydocstyle
           args: ["--count"]
